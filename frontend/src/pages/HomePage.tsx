@@ -1,18 +1,11 @@
 // src/pages/HomePage.tsx
-import React, { useEffect, useContext } from 'react';
+import  { useEffect, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import API from '../lib/api';
 
 // Google ka icon
-const GoogleIcon = () => (
-    <svg className="w-6 h-6 mr-3" viewBox="0 0 48 48">
-        <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039L38.804 9.196C34.978 5.618 29.81 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"></path>
-        <path fill="#FF3D00" d="M6.306 14.691c-1.328 2.6-2.112 5.6-2.112 8.809c0 3.209.784 6.209 2.112 8.809l-5.04-3.914C1.146 30.138 0 27.21 0 24c0-3.21.146-6.138 1.266-9.086l5.04 3.777z"></path>
-        <path fill="#4CAF50" d="M24 48c5.81 0 11-1.618 14.804-4.804l-3.882-3.007C32.41 42.382 28.46 44 24 44c-5.166 0-9.6-2.84-11.7-6.992l-4.942 3.822C12.062 43.15 17.71 48 24 48z"></path>
-        <path fill="#1976D2" d="M43.611 20.083H24v8h11.303c-.792 2.237-2.231 4.16-4.082 5.571l4.639 3.59c2.6-2.408 4.131-5.912 4.131-9.981c0-1.341-.138-2.65-.389-3.917z"></path>
-    </svg>
-);
+
 
 export default function HomePage() {
     const { setAuth } = useContext(AuthContext);

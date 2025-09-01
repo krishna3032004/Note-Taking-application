@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import  { useContext, useState } from "react";
 import API from "../lib/api.js";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
@@ -42,16 +42,7 @@ export default function SignUp() {
   };
 
   // Google Sign-In using Google Identity Services (frontend)
-  const onGoogleLogin = async () => {
-    /* We will open a popup using Google's one-tap or redirect method.
-       To keep this minimal, I recommend using the new Google Identity Services
-       and getting an id_token, then POST to /auth/google-login with idToken.
-       Implementation detail: include <script src="https://accounts.google.com/gsi/client" async defer></script> in index.html
-    */
-    // Quick manual popup approach:
-    // Use google.accounts.id.prompt or renderButton — but for simplicity, show instructions:
-    alert("Use Google Sign-In button implemented in index.html / separate component. See README for Google setup.");
-  };
+  
 
   return (
     <div className="h-[100vh] flex items-center justify-center bg-gray-50">
