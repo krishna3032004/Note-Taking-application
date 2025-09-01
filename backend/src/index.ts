@@ -29,10 +29,6 @@ const MONGO = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/notesapp";
 
 mongoose.connect(MONGO).then(() => {
   console.log("Mongo connected");
-  // app.listen(PORT, () => {
-  //   console.log(`Server running on ${PORT}`);
-  //   console.log(process.env.FRONTEND_URL)
-  // });
 }).catch(err => {
   console.error("Mongo connection error:", err);
 });
