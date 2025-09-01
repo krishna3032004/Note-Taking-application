@@ -1,7 +1,7 @@
 
 
 import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext"; // Assume AuthContext is available
 import API from "../lib/api.js"; // Assume API client is set up like in SignUp
 
@@ -160,9 +160,9 @@ const SignIn = () => {
 
             <p className="text-center text-sm text-gray-600">
               Need an account?{" "}
-              <a href="/signup" className="font-medium text-blue-600 hover:underline">
+              <Link to="/signup" className="font-medium text-blue-600 hover:underline">
                 Create one
-              </a>
+              </Link>
             </p>
           </form>
         </div>
