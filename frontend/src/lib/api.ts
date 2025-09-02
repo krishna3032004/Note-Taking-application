@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Axios ka ek naya instance banayein
 const API = axios.create({
-  baseURL: '/api', // Apne backend ka base URL yahan daalein
+  baseURL: 'https://backend-note-taking-application.onrender.com/api', // Apne backend ka base URL yahan daalein
 });
 
 // Request Interceptor - Har request bhejne se pehle yeh function chalega
